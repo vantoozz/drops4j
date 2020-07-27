@@ -82,20 +82,4 @@ final public class Context {
 
         return json;
     }
-
-
-    public String printWith(final Printer printer) {
-
-        final Map<String, Object> copy = new HashMap<>();
-
-        for (final String key : data.keySet()) {
-            copy.put(key, data.get(key));
-        }
-
-        return printer.print(copy);
-    }
-
-    public interface Printer {
-        String print(final Map<String, Object> context);
-    }
 }
