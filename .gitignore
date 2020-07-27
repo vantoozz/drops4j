@@ -1,0 +1,5 @@
+.gradle/
+build/
+gradle-local.properties
+.gradletasknamecache
+**/.DS_Store
